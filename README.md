@@ -45,6 +45,7 @@ You need to create a _.env_ file using reference from [sample.env](sample.env).
 - add blockfrost api key for preview as well from `BLOCKFROST_API_KEY`
 
 ```bash
+npm i
 npm run start:preview
 ```
 
