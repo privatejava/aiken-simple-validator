@@ -46,7 +46,7 @@ You need to create a _.env_ file using reference from [sample.env](sample.env).
 
 ```bash
 npm i
-npm run start:preview
+npm run test:preview
 ```
 
 ## Documentation
