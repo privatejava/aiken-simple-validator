@@ -1,0 +1,43 @@
+{
+  "name": "simple_saving",
+  "version": "1.0.0",
+  "description": "Write validators in the `validators` folder, and supporting functions in the `lib` folder using `.ak` as a file extension.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">= 20.9 < 21"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:preview": "vitest run --dir __tests__/preview",
+    "test:coverage": "vitest run unit --coverage.enabled --coverage.all"
+  },
+  "author": "Narayan G. Maharjan (me@ngopal.com.np)",
+  
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-typescript": "^7.21.5",
+    "@effect/schema": "^0.66.14",
+    "@eslint/js": "~9.10",
+    "@lucid-evolution/core-utils": "^0.1.16",
+    "@lucid-evolution/lucid": "^0.4.14",
+    "@lucid-evolution/utils": "^0.1.59",
+    "@types/eslint__js": "~8.42",
+    "@types/node": "~20",
+    "@vitest/coverage-v8": "~2.1",
+    "@vitest/eslint-plugin": "~1.1",
+    "effect": "^3.10.4",
+    "eslint": "~9.10",
+    "globals": "~15.9",
+    "lucid-cardano": "^0.10.11",
+    "prettier": "~3.3",
+    "rimraf": "~6.0",
+    "typescript": "~5.5",
+    "typescript-eslint": "~8.5",
+    "vitest": "~2.1"
+  }
+}

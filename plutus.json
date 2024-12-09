@@ -1,0 +1,81 @@
+{
+  "preamble": {
+    "title": "aiken-test/simple_saving",
+    "description": "Aiken contracts for project 'aiken-test/simple_saving'",
+    "version": "0.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.7+unknown"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "simple_saving.testvalidator.spend",
+      "datum": {
+        "title": "datum",
+        "schema": {
+          "$ref": "#/definitions/simple_saving~1DepositType"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/simple_saving~1WithDrawType"
+        }
+      },
+      "compiledCode": "59010701010032323232323225333002323232323253330073370e900118041baa0011323322533300a3370e900018059baa00513232533300f30110021533300c3370e900018069baa003132533300d533300d323233001001375860266028602860286028602860286028602860226ea802c894ccc04c00452809991299980919b8f00200514a22660080080026eb8c050004c054004dd7180098079baa3011300f375400829444ccc03528a504a2266e252080ade204375a6002601e6ea8020588c0440045858dd6980780098061baa00516300c001300c300d001300937540022c6014601600660120046010004601000260086ea8004526136565734aae7555cf2ab9f5742ae881",
+      "hash": "8162b9d15b0b8439c7276c141e69f4f5108c163efdb2aafb36dfc94e"
+    },
+    {
+      "title": "simple_saving.testvalidator.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "59010701010032323232323225333002323232323253330073370e900118041baa0011323322533300a3370e900018059baa00513232533300f30110021533300c3370e900018069baa003132533300d533300d323233001001375860266028602860286028602860286028602860226ea802c894ccc04c00452809991299980919b8f00200514a22660080080026eb8c050004c054004dd7180098079baa3011300f375400829444ccc03528a504a2266e252080ade204375a6002601e6ea8020588c0440045858dd6980780098061baa00516300c001300c300d001300937540022c6014601600660120046010004601000260086ea8004526136565734aae7555cf2ab9f5742ae881",
+      "hash": "8162b9d15b0b8439c7276c141e69f4f5108c163efdb2aafb36dfc94e"
+    }
+  ],
+  "definitions": {
+    "Int": {
+      "dataType": "integer"
+    },
+    "VerificationKeyHash": {
+      "title": "VerificationKeyHash",
+      "dataType": "bytes"
+    },
+    "simple_saving/DepositType": {
+      "title": "DepositType",
+      "anyOf": [
+        {
+          "title": "DepositType",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "owner",
+              "$ref": "#/definitions/VerificationKeyHash"
+            }
+          ]
+        }
+      ]
+    },
+    "simple_saving/WithDrawType": {
+      "title": "WithDrawType",
+      "anyOf": [
+        {
+          "title": "WithDrawType",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "amount",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

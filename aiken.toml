@@ -1,0 +1,18 @@
+name = "aiken-test/simple_saving"
+version = "0.0.0"
+compiler = "v1.1.7"
+plutus = "v3"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'aiken-test/simple_saving'"
+
+[repository]
+user = "aiken-test"
+project = "simple_saving"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "v2.1.0"
+source = "github"
+
+[config]
